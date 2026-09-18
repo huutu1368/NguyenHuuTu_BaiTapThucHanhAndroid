@@ -47,6 +47,15 @@
                 android:textColor="#DCE6EB"
                 android:layout_marginTop="4dp" />
 
+            <!-- So dien thoai -->
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DCE6EB"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
             <TextView
                 android:id="@+id/tvGpaBadge"
                 android:layout_width="wrap_content"
@@ -73,6 +82,21 @@
                 android:text="Cập Nhật Thông Tin"
                 android:backgroundTint="#34B469"
                 android:layout_marginTop="12dp" />
+
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gọi Điện"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xóa Hồ Sơ"
+                android:layout_marginTop="8dp" />
 
         </LinearLayout>
 
