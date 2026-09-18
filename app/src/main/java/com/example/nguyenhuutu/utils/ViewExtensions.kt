@@ -4,7 +4,7 @@ package com.example.nguyenhuutu.utils
 
 import android.content.Context
 import android.widget.Toast
-
+import android.app.AlertDialog
 fun Double.toAcademicRanking(): String {
     return when {
         this >= 3.6 -> "Xuất sắc!!"
@@ -20,4 +20,15 @@ fun Context.toast(message: String) {
         message,
         Toast.LENGTH_SHORT
     ).show()
+}
+fun Context.showConfirmDialog(title: String, message: String, onConfirm: () -> Unit) {
+    AlertDialog.Builder(this)
+        .setTitle(title)
+        .setMessage(message)
+        .setPositiveButton("Đồng ý") { _, _ ->
+
+            onConfirm()
+        }
+        .setNegativeButton("Hủy", null)
+        .show()
 }
